@@ -27,26 +27,26 @@ for (i = 0; i < ages.length; i++) {
     if (ages[i] <= 20) {
         younger.push(ages[i])
     }
-};
-console.log(younger)
+}
+console.log(younger);
 
 var youngerReverse = []
 for (var i = younger.length - 1; i >= 0; i--) {
     youngerReverse.push(younger[i]);
 }
-console.log(youngerReverse)
-    /*
-        Part 3: We're comfortable going through an element from beginning to end, but let's
-        flip this around. With the new "younger" array you created in the last part,
-        print out the elements so that the last element is printed out first, and the
-        first element is printed out last.
+console.log(youngerReverse);
+/*
+    Part 3: We're comfortable going through an element from beginning to end, but let's
+    flip this around. With the new "younger" array you created in the last part,
+    print out the elements so that the last element is printed out first, and the
+    first element is printed out last.
 
-        Hint: What should the index for your for-loop be initialized to if we want to start
-        at the end of the array?
+    Hint: What should the index for your for-loop be initialized to if we want to start
+    at the end of the array?
 
-        Hint: What would the conditional for your for-loop look like?
-    */
-var youngerer = []
+    Hint: What would the conditional for your for-loop look like?
+*/
+var youngerer = [];
 
 var tempNum = 0;
 while (tempNum < ages.length) {
@@ -59,17 +59,21 @@ while (tempNums < ages.length && ages[tempNums] <= 20) {
     youngerer.push(ages[tempNums]);
     tempNums += 1;
 };
-var youngerer1 = []
-var tempNums2 = 5
+console.log(youngerer)
+
+var youngerer1 = [];
+
+var tempNums2 = 4;
+
 while (tempNums2 > youngerer.length) {
     youngerer1.push(youngerer[tempNums2])
     tempNums2 -= 1;
 }
-console.log(youngerer1)
-    /*
-        Part 4: Now that you've finished the first 3 parts using a for-loop, repeat the same exercises
-        (Part 1, Part 2, and Part 3) using a while-loop.
-    */
+console.log(youngerer1);
+/*
+    Part 4: Now that you've finished the first 3 parts using a for-loop, repeat the same exercises
+    (Part 1, Part 2, and Part 3) using a while-loop.
+*/
 function whatDayIsIt(dayNumber) {
     var day;
     switch (dayNumber) {
@@ -100,13 +104,23 @@ function whatDayIsIt(dayNumber) {
         case 6:
             day = "Saturday";
 
+            break;
         default:
             day = "Enter a valid day of the week"
     }
     return day
 }
 
+console.log(whatDayIsIt(0))
+console.log(whatDayIsIt(1))
 console.log(whatDayIsIt(2))
+console.log(whatDayIsIt(3))
+console.log(whatDayIsIt(4))
+console.log(whatDayIsIt(5))
+console.log(whatDayIsIt(6))
+
+
+
 
 
 
